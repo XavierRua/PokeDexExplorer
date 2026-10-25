@@ -82,7 +82,8 @@ Las imágenes de la lista se arman con el id, sin pedir la ficha completa:
 PokeDexExplorer/
 ├── App.js
 ├── docs/
-│   └── REFLEXION.md
+│   ├── REFLEXION.md
+│   └── capturas/
 └── src/
     ├── services/
     │   └── pokeApi.js
@@ -169,9 +170,19 @@ Cada concepto está marcado en el código con un comentario `// Concepto: ...` (
 
 ---
 
-## Capturas y video
+## Capturas
 
-Las capturas de cada estado (lista, cargando más, ficha, cargando, error y sin resultados) y el video de demostración se entregan en la plataforma de la universidad.
+| Captura 1 | Captura 2 | Captura 3 |
+|---|---|---|
+| ![Captura 1](docs/capturas/captura1.jpeg) | ![Captura 2](docs/capturas/captura2.jpeg) | ![Captura 3](docs/capturas/captura3.jpeg) |
+
+| Captura 4 | Captura 5 |
+|---|---|
+| ![Captura 4](docs/capturas/captura4.jpeg) | ![Captura 5](docs/capturas/captura5.jpeg) |
+
+### Video de demostración
+
+[Ver el video de demostración](docs/capturas/consumoAppi.mp4)
 
 ---
 

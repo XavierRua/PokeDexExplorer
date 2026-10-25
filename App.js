@@ -1,20 +1,16 @@
+
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import PokedexScreen from './src/screens/PokedexScreen';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    // Concepto: SafeAreaProvider. Mide las zonas seguras del celular (notch, barras)
+    // una sola vez; los SafeAreaView de adentro usan esas medidas
+    <SafeAreaProvider>
+      {/* Textos de la barra de estado (hora, batería) en oscuro, sobre el fondo claro */}
+      <StatusBar style="dark" />
+      <PokedexScreen />
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
